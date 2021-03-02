@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DetailTransaction">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+      <PropertyRef Name="LaptopID" />
+    </Key>
+    <Property Name="TransactionID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="LaptopID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HeaderTransaction">
+    <Key>
+      <PropertyRef Name="TransactionID" />
+    </Key>
+    <Property Name="TransactionID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="UserID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="TransactionDate" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Laptop">
+    <Key>
+      <PropertyRef Name="LaptopID" />
+    </Key>
+    <Property Name="LaptopID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="LaptopBrandID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="LaptopName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LaptopSize" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LaptopVGA" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LaptopRAM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LaptopPrice" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LaptopBrand">
+    <Key>
+      <PropertyRef Name="LaptopBrandID" />
+    </Key>
+    <Property Name="LaptopBrandID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="LaptopBrandName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserGender" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="UserEmail" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserDoB" Type="date" Nullable="false" />
+    <Property Name="UserPhone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserAddress" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserPassword" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserRole" Type="varchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_DetailTransaction_ToHeaderTransaction">
+    <End Role="HeaderTransaction" Type="Self.HeaderTransaction" Multiplicity="1" />
+    <End Role="DetailTransaction" Type="Self.DetailTransaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HeaderTransaction">
+        <PropertyRef Name="TransactionID" />
+      </Principal>
+      <Dependent Role="DetailTransaction">
+        <PropertyRef Name="TransactionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DetailTransaction_ToLaptop">
+    <End Role="Laptop" Type="Self.Laptop" Multiplicity="1" />
+    <End Role="DetailTransaction" Type="Self.DetailTransaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Laptop">
+        <PropertyRef Name="LaptopID" />
+      </Principal>
+      <Dependent Role="DetailTransaction">
+        <PropertyRef Name="LaptopID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HeaderTransaction_ToUser">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="HeaderTransaction" Type="Self.HeaderTransaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="HeaderTransaction">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Laptop_ToLaptopBrand">
+    <End Role="LaptopBrand" Type="Self.LaptopBrand" Multiplicity="1" />
+    <End Role="Laptop" Type="Self.Laptop" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LaptopBrand">
+        <PropertyRef Name="LaptopBrandID" />
+      </Principal>
+      <Dependent Role="Laptop">
+        <PropertyRef Name="LaptopBrandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DatabaseModelStoreContainer">
+    <EntitySet Name="DetailTransaction" EntityType="Self.DetailTransaction" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HeaderTransaction" EntityType="Self.HeaderTransaction" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Laptop" EntityType="Self.Laptop" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LaptopBrand" EntityType="Self.LaptopBrand" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_DetailTransaction_ToHeaderTransaction" Association="Self.FK_DetailTransaction_ToHeaderTransaction">
+      <End Role="HeaderTransaction" EntitySet="HeaderTransaction" />
+      <End Role="DetailTransaction" EntitySet="DetailTransaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DetailTransaction_ToLaptop" Association="Self.FK_DetailTransaction_ToLaptop">
+      <End Role="Laptop" EntitySet="Laptop" />
+      <End Role="DetailTransaction" EntitySet="DetailTransaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HeaderTransaction_ToUser" Association="Self.FK_HeaderTransaction_ToUser">
+      <End Role="User" EntitySet="User" />
+      <End Role="HeaderTransaction" EntitySet="HeaderTransaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Laptop_ToLaptopBrand" Association="Self.FK_Laptop_ToLaptopBrand">
+      <End Role="LaptopBrand" EntitySet="LaptopBrand" />
+      <End Role="Laptop" EntitySet="Laptop" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

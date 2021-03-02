@@ -1,0 +1,45 @@
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\bin\Debug\Login Form.exe.config
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\bin\Debug\Login Form.exe
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\bin\Debug\Login Form.pdb
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.RegisterForm.resources
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.MainFrmStff.resources
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.LoginForm.resources
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.Properties.Resources.resources
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\obj\Debug\Project.csproj.GenerateResource.cache
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\obj\Debug\Login Form.exe
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\obj\Debug\Login Form.pdb
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\obj\Debug\Project.csprojAssemblyReference.cache
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.ChgPass.resources
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.ManageLB.resources
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.ManageL.resources
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.ManageU.resources
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.ViewTrans.resources
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.ViewHistory.resources
+C:\Users\LENOVO\source\repos\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.BuyForm.resources
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\bin\Debug\Login Form.exe.config
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\bin\Debug\Login Form.exe
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\bin\Debug\Login Form.pdb
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Project.csprojAssemblyReference.cache
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.BuyForm.resources
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.ChgPass.resources
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.ManageU.resources
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.ManageLB.resources
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.ManageL.resources
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.RegisterForm.resources
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.MainFrmStff.resources
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.LoginForm.resources
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.Properties.Resources.resources
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.ViewHistory.resources
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Login_Form.ViewTrans.resources
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Project.csproj.GenerateResource.cache
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Login Form.exe
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Login Form.pdb
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\bin\Debug\Database1.mdf
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\bin\Debug\Database1_log.ldf
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\bin\Debug\EntityFramework.dll
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\bin\Debug\EntityFramework.SqlServer.dll
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\bin\Debug\EntityFramework.xml
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\bin\Debug\EntityFramework.SqlServer.xml
+D:\IT\4th Semester\Object Oriented Database\WindowsFormsApp1\Login Form\obj\Debug\Project.csproj.CopyComplete
